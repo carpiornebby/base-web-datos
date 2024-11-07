@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./imgenes-videos/n3.png" type="image/png" />
+    <title>Programación</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="separar">
+        <div class="titulo"><h1>Programación y Base de Datos</h1></div>
+        <div class="contenido">
+          <img
+            src="./imgenes-videos/datos.jpg"
+            alt="imagen de una computadora"
+            class="img-vid"
+          />
+        </div>
+      </div>
+      <aside class="menu-opciones">
+        <h3>Menú de Contenidos</h3>
+        <a href="#modal-uno" class="boton-menu">Lenguaje C</a>
+        <a href="#modal-dos" class="boton-menu">Tipos de Datos</a>
+        <a href="#modal-tres" class="boton-menu">Estructura de Control</a>
+        <a href="#modal-cuatro" class="boton-menu">Estructura Selectiva</a>
+        <a href="#modal-cinco" class="boton-menu">Estructura de Repetición</a>
+        <a href="#modal-seis" class="boton-menu">Arreglos(Arrays)</a>
+        <a href="#modal-siete" class="boton-menu"
+          >Metodos de Ordenamiento de Datos</a
+        >
+        <a href="#modal-ocho" class="boton-menu1"
+          >Integrates: <br />
+          Nebby Carpio R
+        </a>
+      </aside>
+    </div>
+    <div class="ventanas-de-contenido">
+      <div id="modal-uno" class="modal">
+        <div class="contenido-modal">
+          <h2>Lenguaje C: Historia y Características</h2>
+          <br />
+          <div class="centro">
+            <strong>Historia: </strong><br />
+            Desarrollado en 1972 por Dennis Ritchie en los Laboratorios Bell, el
+            lenguaje C fue creado como una mejora del lenguaje B y BCPL.
+            Originalmente se diseñó para ayudar en el desarrollo del sistema
+            operativo UNIX, que necesitaba un lenguaje flexible y eficiente.
+            <br />
+
+            Desde su lanzamiento, C se ha convertido en uno de los lenguajes más
+            influyentes y utilizados en la programación. Su éxito se debe a su
+            capacidad para acceder y manipular hardware y su estructura que
+            permite crear código eficiente. <br />
+
+            En la década de los 80, el lenguaje C fue estandarizado por el ANSI
+            (American National Standards Institute), creando lo que se conoce
+            como ANSI C. Posteriormente, el estándar fue adoptado por la ISO
+            (International Organization for Standardization). <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/leng2.jpg" alt="lenguaje c" />
+            </div>
+            <strong> Características:</strong> <br />
+
+            <strong> Portabilidad:</strong> Es uno de los lenguajes más
+            portables, lo que significa que los programas escritos en C se
+            pueden ejecutar en diferentes plataformas con mínimas
+            modificaciones, haciéndolo ideal para software de propósito general.
+            <br />
+
+            <strong> Lenguaje de bajo nivel:</strong> Aunque C es considerado de
+            alto nivel, posee características de bajo nivel que permiten
+            trabajar con direcciones de memoria, lo cual es esencial para la
+            programación de sistemas embebidos y sistemas operativos. <br />
+
+            <strong> Control manual de la memoria:</strong> Utiliza funciones
+            como malloc y free para manejar la memoria de manera dinámica, lo
+            que permite optimizar el uso de recursos, aunque también requiere
+            una gestión cuidadosa para evitar errores como fugas de memoria.
+            <br />
+
+            <strong> Sintaxis concisa:</strong> A pesar de su potencia, la
+            sintaxis de C es concisa y clara, lo que permite a los programadores
+            expresar algoritmos complejos de forma compacta. <br />
+
+            <strong> Biblioteca estándar:</strong> C incluye una rica biblioteca
+            estándar que proporciona funciones para entradas/salidas (stdio.h),
+            manejo de cadenas (string.h), matemáticas (math.h), entre otras.
+            <br />
+          </div>
+          <a href="#" class="Cerrar">Inicio</a>
+        </div>
+      </div>
+      <div id="modal-dos" class="modal">
+        <div class="contenido-modal">
+          <h2>Tipos de Datos en Leguaje C</h2>
+          <br />
+          <div class="centro">
+            En C, los tipos de datos determinan qué tipo de valor puede
+            almacenar una variable y cuánta memoria ocupará. C cuenta con una
+            variedad de tipos de datos que se clasifican en categorías básicas y
+            derivadas: <br />
+
+            <strong> 1. Tipos de datos básicos</strong> <br />
+
+            Estos son los tipos más utilizados y proporcionan los elementos
+            fundamentales para la construcción de un programa: <br />
+
+            <div class="contenido2">
+              <img src="./imgenes-videos/t-datos3.jpg" alt="lenguaje c" />
+            </div>
+            <strong> int (entero):</strong> <br />
+
+            Representa números enteros, tanto positivos como negativos. <br />
+
+            El tamaño de int puede variar entre sistemas, pero comúnmente ocupa
+            4 bytes, permitiendo almacenar un rango de valores desde
+            -2,147,483,648 a 2,147,483,647. <br />
+<div class="code-container">
+    <pre><code>
+  Int numero = 5;
+ </pre></code>
+</div>
+            <strong> float (flotante):</strong> <br />
+
+            Se usa para almacenar números con punto decimal (números reales) de
+            precisión simple. <br />
+
+            Ocupa 4 bytes en la memoria y permite un rango aproximado de 3.4e−38
+            a 3.4e+38. <br />
+            <div class="code-container">
+              <pre><code>
+
+  Float temperatura = 36.5;
+
+              </pre></code>
+            </div>
+            <strong> double (doble precisión):</strong> <br />
+
+            Similar a float, pero con mayor precisión, ya que ocupa 8 bytes.
+            <br />
+
+            Es útil cuando se necesita mayor exactitud en cálculos matemáticos o
+            científicos. <br />
+            <div class="code-container">
+              <pre><code>
+  Double pi = 3.141592653589793;
+                
+              </pre></code>
+            </div>
+            <strong> char (carácter):</strong> <br />
+
+            Almacena un solo carácter (letra, número o símbolo). <br />
+
+            Ocupa 1 byte de memoria y su valor se representa generalmente en el
+            conjunto de caracteres ASCII. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Char letra = "A";
+              </pre></code>
+            </div>
+            <strong> 2. Modificadores de tipos de datos</strong> <br />
+
+            Los modificadores se utilizan para ajustar el rango de los tipos de
+            datos básicos, incrementando o disminuyendo su capacidad de
+            almacenamiento. Los modificadores comunes son: <br />
+
+            <strong> signed y unsigned:</strong> <br />
+
+            signed permite almacenar números tanto positivos como negativos (por
+            defecto en int). <br />
+
+            unsigned solo permite valores positivos, lo cual dobla el rango
+            positivo de un tipo de dato dado. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Unsigned int edad = 30; // Solo valores positivos
+  Signed int temperatura = -5; // Positivos y negativos
+              </pre></code>
+            </div>
+            <strong> short y long:</strong> <br />
+
+            short reduce el tamaño de almacenamiento de un int, por lo general a
+            2 bytes. <br />
+
+            long incrementa la capacidad de almacenamiento, por lo general a 8
+            bytes para un long int. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Short int smallNumber = 100; // Menor rango, menos espacio
+  Long int largeNumber = 1000000; // Mayor rango, más espacio
+              </pre></code>
+            </div>
+            <strong> 3. Tipos de datos derivados</strong> <br />
+
+            Estos tipos de datos permiten crear estructuras más complejas:
+            <br />
+
+            <strong> Arreglos (arrays):</strong> <br />
+
+            Un arreglo es una colección de elementos del mismo tipo que se
+            almacenan en ubicaciones de memoria contiguas. <br />
+
+            Los arreglos pueden ser unidimensionales (vectores) o
+            multidimensionales (matrices). <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int numeros[5] = {1, 2, 3, 4, 5}; // Arreglo de 5 enteros
+              </pre></code>
+            </div>
+
+            <strong> Punteros (pointers):</strong> <br />
+
+            Los punteros almacenan la dirección de memoria de una variable,
+            permitiendo manipular la memoria de manera más directa. <br />
+
+            Son cruciales para la gestión dinámica de la memoria y para el paso
+            de funciones. <br />
+
+            <div class="code-container">
+              <pre><code>
+  int *ptr;
+  int numero = 10; ptr = "&numero"; 
+  // ptr almacena la dirección de numero
+              </pre></code>
+            </div>
+
+            <strong> Estructuras (struct): </strong><br />
+
+            Permiten combinar diferentes tipos de datos bajo un solo nombre, lo
+            que es útil para agrupar datos relacionados. <br />
+
+            <div class="code-container">
+              <pre><code>
+  struct Persona { 
+  char nombre[50];
+  int edad;
+  float altura
+  };
+              </pre></code>
+            </div>
+
+            <strong> Uniones (union):</strong> <br />
+
+            Al igual que las estructuras, las uniones agrupan diferentes tipos
+            de datos, pero todos los miembros comparten el mismo espacio de
+            memoria. <br />
+
+            Esto es útil cuando se necesita almacenar un tipo de dato a la vez,
+            ahorrando espacio. <br />
+
+            <div class="code-container">
+              <pre><code>
+  union Datos {
+  int numero;
+  float decimal;
+  char letra; 
+  };
+              </pre></code>
+            </div>
+            <strong> Enumeraciones (enum):</strong> <br />
+
+            Define un conjunto de constantes enteras con nombre, lo cual es útil
+            para representar valores predefinidos. <br />
+
+            <div class="code-container">
+              <pre><code>
+  enum Dias {LUNES, MARTES, MIERCOLES, JUEVES, VIERNES};
+  enum Dias hoy = LUNES;
+              </pre></code>
+            </div>
+
+            <strong> 4. Tipos de datos vacíos </strong><br />
+
+            <strong> void:</strong> <br />
+
+            Se utiliza para indicar que una función no retorna ningún valor, o
+            que un puntero no apunta a un tipo específico de dato. <br />
+
+            <div class="code-container">
+              <pre><code>
+  void funcionEjemplo() 
+  { printf("Esta función no retorna nada.");
+  }
+              </pre></code>
+            </div>
+
+            <strong> Importancia de los tipos de datos</strong> <br />
+
+            <strong> Control de memoria:</strong> Los tipos de datos permiten al
+            programador gestionar eficientemente la memoria del sistema, ya que
+            cada tipo de dato ocupa una cantidad específica de espacio. <br />
+
+            <strong> Precisión en cálculos:</strong> La elección de un tipo de
+            dato adecuado es crucial para operaciones matemáticas, ya que puede
+            afectar la precisión y rango de los valores. <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/t-datos2.jpg" alt="lenguaje c" />
+            </div>
+            <strong> Facilitan la lectura y mantenimiento del código:</strong>
+            Al definir claramente el tipo de datos, se facilita la comprensión
+            de cómo se espera que las variables se comporten en el programa.
+            <br />
+
+            Ejemplos adicionales de tipos de datos en uso <br />
+
+            <strong> Operaciones matemáticas:</strong> <br />
+
+            <strong> Usando int y float para realizar una división:</strong>
+            <br />
+
+            <div class="code-container">
+              <pre><code>
+  int a = 5;
+  int b = 2;
+  float resultado = (float)a / b; // Conversión a float para precisió
+              </code></pre>
+            </div>
+
+            <strong> Manejo de cadenas:</strong> <br />
+
+            Las cadenas de texto en C se manejan como arreglos de caracteres,
+            terminadas con un carácter nulo ('\0'): <br />
+
+            <div class="code-container">
+              <pre><code>
+  char saludo[] ="Hola, mundo";
+  printf("%s", saludo); // Imprime la cadena de caracteres
+              </code></pre>
+            </div>
+            <a href="#" class="Cerrar">Inicio</a>
+          </div>
+        </div>
+      </div>
+      <div id="modal-tres" class="modal">
+        <div class="contenido-modal">
+          <h2>Estrucrura de Control en Lenguaje C</h2>
+          <div class="centro">
+            Las estructuras de control son fundamentales en cualquier lenguaje
+            de programación, ya que permiten controlar el flujo de ejecución de
+            un programa, es decir, la manera en que se ejecutan las
+            instrucciones según ciertas condiciones o repeticiones. <br />
+
+            <strong> Estructuras de control en C </strong><br />
+
+            En C, las estructuras de control se pueden clasificar en dos
+            categorías principales: <br />
+
+            <strong> 1. Estructuras de control de flujo secuencial</strong>
+            <br />
+
+            <strong>
+              2. Estructuras de control de flujo de decisión
+              (selectivas)</strong
+            >
+            <br />
+
+            <strong>
+              3. Estructuras de control de repetición (iterativas)</strong
+            >
+            <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/estructura1.jpg" alt="lenguaje c" />
+            </div>
+            <strong> 1. Estructuras de control de flujo secuencial</strong>
+            <br />
+
+            Este tipo de estructura es la más básica y se refiere a la ejecución
+            de instrucciones de manera secuencial, una tras otra, en el orden en
+            que están escritas en el código. Es el flujo de control por defecto
+            en un programa. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int a = 5;
+  Int b = 10;
+  Int suma = a + b;
+  Printf(“La suma es: %d”, suma);
+              </code></pre>
+            </div>
+
+            En este ejemplo, las variables a y b se definen, luego se calcula la
+            suma, y finalmente se imprime el resultado. Cada instrucción se
+            ejecuta de forma secuencial. <br />
+            <strong>
+              2. Estructuras de control de flujo de decisión
+              (selectivas)</strong
+            >
+            <br />
+
+            Estas estructuras permiten tomar decisiones basadas en ciertas
+            condiciones, ejecutando diferentes bloques de código según el
+            resultado de una condición (verdadera o falsa). Las principales
+            estructuras selectivas en C son: <br />
+
+            <strong> if:</strong>
+
+            Permite ejecutar un bloque de código solo si una condición es
+            verdadera. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int x = 10;
+  If (x > 5) 
+  { Printf(“x es mayor que 5”); 
+  }
+              </code></pre>
+            </div>
+
+            En este caso, el mensaje se imprimirá solo si la variable x es mayor
+            que 5. <br />
+
+            <strong> if...else: </strong><br />
+
+            Añade una alternativa para el caso en que la condición no se cumpla.
+            <br />
+
+            <div class="code-container">
+              <pre><code>
+  int x = 3;
+  If (x > 5) 
+  { Printf(“x es mayor que 5”);
+  } else {
+  Printf(“x es menor o igual a 5”);
+  }
+              </code></pre>
+            </div>
+
+            Aquí, si x es menor o igual a 5, se ejecutará la instrucción del
+            bloque else. <br />
+
+            <strong> if...else if...else:</strong> <br />
+
+            Se utiliza cuando hay varias condiciones posibles y se quiere
+            ejecutar diferentes bloques de código para cada una. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int x = 10;
+  If (x > 10) 
+  { Printf(“x es mayor que 10”); 
+  } else if (x == 10) { Printf(“x es igual a 10”); 
+  } else { Printf(“x es menor que 10”); 
+  }
+              </code></pre>
+            </div>
+
+            Este ejemplo evalúa cada condición en secuencia y ejecuta el bloque
+            correspondiente al primer caso que se cumpla. <br />
+
+            <strong> switch:</strong> <br />
+            Se usa para tomar decisiones múltiples basadas en el valor de una
+            variable. <br />
+
+            Es útil cuando se tiene un número fijo de casos posibles. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int dia = 3;
+  Switch (dia) {Case 1:
+  Printf(“Lunes”); Break;
+  Case2: 
+  Printf(“Martes”); Break;
+  Case 3:
+  Printf(“Miércoles”); Break;
+  Default: 
+  Printf(“Día no válido”); 
+  }
+              </code></pre>
+            </div>
+
+            El valor de la variable dia se compara con cada case, y si coincide,
+            se ejecuta el bloque correspondiente. default se ejecuta si ninguna
+            condición anterior se cumple. Es importante usar break para evitar
+            la "caída" hacia el siguiente caso. <br />
+
+            <strong>
+              3. Estructuras de control de repetición (iterativas)</strong
+            >
+            <br />
+
+            Estas estructuras permiten repetir un bloque de código mientras se
+            cumpla una condición. Las principales estructuras de repetición en C
+            son: <br />
+
+            <strong> for:</strong> <br />
+
+            Se utiliza cuando se conoce de antemano el número de veces que se
+            desea repetir un bloque de código. <br />
+
+            Su estructura consta de una inicialización, una condición y un
+            incremento o decremento. <br />
+
+            <div class="code-container">
+              <pre><code>
+  For (int i = 0; i < 5; i++)
+  { Printf(“Número: %d\n”, i); 
+  }
+              </pre></code>
+            </div>
+
+            En este caso, la variable i comienza en 0 y se incrementa en 1 hasta
+            que i es menor a 5, imprimiendo los números del 0 al 4. <br />
+
+            <strong> while:</strong> <br />
+
+            Se utiliza cuando no se sabe cuántas veces se repetirá el bucle y se
+            quiere repetir mientras una condición sea verdadera. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int i = 0;
+  While (i < 5) 
+  { Printf(“Número: %d\n”, i); 
+    i++; 
+  }
+            </pre></code>
+            </div>
+
+            El ciclo continuará ejecutándose mientras i sea menor que 5. <br />
+
+            <strong> do...while:</strong> <br />
+
+            Similar a while, pero la diferencia es que garantiza la ejecución
+            del bloque al menos una vez, ya que la condición se evalúa después
+            de ejecutar el bloque. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int i = 0;
+  Do { Printf(“Número: %d\n”, i);
+  i++; 
+  } while (i < 5);
+              </pre></code>
+            </div>
+
+            En este caso, el código dentro del do se ejecuta antes de evaluar la
+            condición i < 5. <br />
+
+            <strong> Importancia de las estructuras de control</strong> <br />
+
+            <strong> Eficiencia y flexibilidad: </strong>Permiten crear
+            programas que se adapten a distintas situaciones, ya que el
+            comportamiento del código puede cambiar según las entradas del
+            usuario o los datos procesados. <br />
+
+            <strong> Reducción de código repetitivo:</strong> Las estructuras de
+            repetición (como for y while) ayudan a evitar escribir el mismo
+            bloque de código varias veces. <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/estructura2.jpg" alt="lenguaje c" />
+            </div>
+
+            <strong> Toma de decisiones:</strong> Las estructuras de selección
+            (if y switch) son fundamentales para crear programas que puedan
+            tomar decisiones complejas en tiempo de ejecución. <br />
+          </div>
+          <a href="#" class="Cerrar">Inicio</a>
+        </div>
+      </div>
+      <div id="modal-cuatro" class="modal">
+        <div class="contenido-modal">
+          <h2>Estructura Selectiva</h2>
+          <br />
+          <div class="centro">
+            Las estructuras selectivas permiten tomar decisiones en un programa,
+            ejecutando diferentes bloques de código dependiendo de una condición
+            o conjunto de condiciones. Son útiles para controlar el flujo del
+            programa según la evaluación de expresiones lógicas. <br />
+
+            <strong> Tipos de Estructuras Selectivas </strong><br />
+
+            <strong> 1. Estructura Selectiva Simple</strong> <br />
+
+            <strong> 2. Estructura Selectiva Doble</strong> <br />
+
+            <strong> 3. Estructura Selectiva Múltiple </strong><br />
+
+            <div class="contenido2">
+              <img src="./imgenes-videos/estr-sel.jpg" alt="lenguaje c" />
+            </div>
+
+            <strong> 1. Estructura Selectiva Simple</strong> <br />
+
+            La estructura selectiva simple utiliza la instrucción if para
+            evaluar una única condición y ejecutar un bloque de código solo si
+            esta es verdadera. <br />
+
+            <strong> Características:</strong> <br />
+
+            Evalúa una sola condición. <br />
+
+            Si la condición es verdadera, ejecuta el bloque de código asociado.
+            <br />
+
+            Si la condición es falsa, simplemente ignora el bloque de código.
+            <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int numero = 5;
+  If (numero > 0) 
+  { Printf(“El número es positivo.\n”); 
+  }
+              </pre></code>
+            </div>
+
+            Aquí, la condición numero > 0 se evalúa. Si es verdadera (es decir,
+            si el número es mayor que 0), se imprime el mensaje "El número es
+            positivo". <br />
+
+            <strong> Uso típico:</strong> Se usa cuando solo es necesario
+            realizar una acción si una condición se cumple. <br />
+            <strong> 2. Estructura Selectiva Doble</strong> <br />
+
+            La estructura selectiva doble utiliza la instrucción if...else, lo
+            que permite evaluar una condición y tener dos posibles acciones: una
+            si la condición es verdadera y otra si es falsa. <br />
+
+            <strong> Características: </strong><br />
+
+            Evalúa una sola condición. <br />
+
+            Si la condición es verdadera, ejecuta un primer bloque de código.
+            <br />
+
+            Si la condición es falsa, ejecuta un segundo bloque de código (el
+            bloque else). <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int edad = 17;
+  If (edad >= 18) 
+  { Printf(“Eres mayor de edad.\n”); 
+  } else 
+  { Printf(“Eres menor de edad.\n”); 
+  }
+              </pre></code>
+            </div>
+
+            En este caso, la condición edad >= 18 determina si se imprime "Eres
+            mayor de edad" o "Eres menor de edad". <br />
+
+            Uso típico: Es útil cuando hay dos caminos posibles y uno de ellos
+            siempre se debe ejecutar dependiendo de si la condición es verdadera
+            o falsa. <br />
+
+            <strong> 3. Estructura Selectiva </strong> <br />
+
+            La estructura selectiva múltiple permite evaluar varias condiciones
+            y ejecutar diferentes bloques de código según el caso que se cumpla.
+            Esto se puede lograr con varias instrucciones if...else if...else o
+            usando la instrucción switch. <br />
+
+            <strong> a.- Usando if...else if...else </strong><br />
+
+            <strong> Características:</strong> <br />
+
+            Permite evaluar varias condiciones en secuencia. <br />
+
+            Si una condición es verdadera, ejecuta el bloque de código
+            correspondiente y omite las siguientes. <br />
+
+            Si ninguna de las condiciones es verdadera, puede ejecutar un bloque
+            else final. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int nota = 85; 
+  If (nota >= 90) {
+  Printf(“Excelente.\n”); 
+  } else
+  if (nota >= 80) {
+  Printf(“Muy bueno.\n”); 
+  } else if (nota >= 70) {
+  Printf(“Bueno.\n”); 
+  } else 
+  { Printf(“Reprobado.\n”); 
+  }
+              </pre></code>
+            </div>
+
+            En este ejemplo, se evalúa la variable nota para imprimir el mensaje
+            adecuado según su valor. Si nota es mayor o igual a 90, se imprime
+            "Excelente"; si está entre 80 y 89, se imprime "Muy bueno", y así
+            sucesivamente. <br />
+
+            <strong> b.- Usando switch</strong> <br />
+
+            <strong> Características:</strong> <br />
+
+            Es ideal para comparar una misma variable o expresión con múltiples
+            valores fijos. <br />
+
+            Es más eficiente y claro que escribir muchos if...else if cuando se
+            comparan valores enteros o caracteres. <br />
+
+            Incluye un bloque default para manejar casos no especificados.
+            <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int opcion = 3; 
+  Switch (opcion) {
+  Case 1: 
+  Printf(“Opción 1 seleccionada.\n”);
+  Break; 
+  Case 2: 
+  Printf(“Opción 2 seleccionada.\n”);
+  Break; 
+  Case 3: 
+  Printf(“Opción 3 seleccionada.\n”);
+  Break; 
+  Default:
+  Printf(“Opción no válida.\n”);
+  }
+              </pre></code>
+            </div>
+
+            Aquí, el switch compara el valor de opcion con los casos definidos
+            (1, 2, 3). Si opcion vale 3, se imprime "Opción 3 seleccionada".
+            <br />
+
+            <strong> Uso típico:</strong> Se usa cuando se tienen múltiples
+            valores posibles para una misma variable y se quiere ejecutar un
+            código específico para cada uno de ellos. <br />
+
+            <div class="contenido2">
+              <img src="./imgenes-videos/estr-sel2.jpg" alt="lenguaje c" />
+            </div>
+
+            Comparación entre los tipos de estructuras selectivas <br />
+
+            <strong> Simplicidad:</strong> La estructura simple es la más fácil
+            de entender y usar, ya que solo evalúa una condición. <br />
+
+            <strong> Flexibilidad:</strong> La estructura doble es útil cuando
+            hay dos alternativas y se necesita manejar el caso contrario a la
+            condición inicial. <br />
+
+            <strong> Manejo de múltiples casos:</strong> La estructura múltiple
+            es ideal cuando hay más de dos posibles resultados, proporcionando
+            un código más limpio y organizado en comparación con muchos if
+            anidados. <br />
+
+            <!-- mirar si se puede poere u cuadr compartivo -->
+          </div>
+          <a href="#" class="Cerrar">Inicio</a>
+        </div>
+      </div>
+      <div id="modal-cinco" class="modal">
+        <div class="contenido-modal">
+          <h2>Estrucrura de Repetición</h2>
+          <div class="centro">
+            Estructuras de repetición en el lenguaje C. Estas estructuras
+            permiten ejecutar un bloque de código varias veces, dependiendo de
+            una condición. Son esenciales para automatizar tareas repetitivas y
+            para iterar a través de datos en un programa. En C, las principales
+            estructuras de repetición son: <br />
+
+            <strong> Tipos de Estructuras de Repetición</strong> <br />
+
+            <strong> 1. Bucle for</strong> <br />
+
+            <strong> 2. Bucle while</strong> <br />
+
+            <strong> 3. Bucle do...while</strong> <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/estr-rep.jpg" alt="lenguaje c" />
+            </div>
+            <strong> 1. Bucle for</strong> <br />
+
+            El bucle for es una estructura de repetición que se usa cuando se
+            conoce de antemano el número de veces que se desea iterar. Se
+            compone de tres partes: inicialización, condición y actualización.
+            <br />
+
+            <strong> Sintaxis:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  For (inicialización; condición; actualización) {
+  // código a ejecutar 
+  }
+              </pre></code>
+            </div>
+
+            <strong> Características:</strong> <br />
+
+            La inicialización establece el valor inicial de la variable de
+            control. <br />
+
+            La condición evalúa si el bucle debe continuar ejecutándose. <br />
+
+            La actualización cambia la variable de control después de cada
+            iteración. <br />
+
+            <div class="code-container">
+              <pre><code>
+  For (int i = 0; i < 5; i++) {
+  Printf(“Iteración %d\n”, i); 
+  }
+              </pre></code>
+            </div>
+
+            Este bucle imprime "Iteración" seguido del valor de i desde 0 hasta
+            4. <br />
+
+            <strong> Cuándo usarlo:</strong> Es ideal cuando se sabe exactamente
+            cuántas veces se necesita repetir el bloque de código, como al
+            recorrer un arreglo. <br />
+
+            <strong> 2. Bucle while </strong><br />
+
+            El bucle while ejecuta un bloque de código mientras una condición
+            sea verdadera. La condición se evalúa antes de cada iteración, y si
+            es falsa desde el inicio, el bucle no se ejecuta. <br />
+
+            <div class="code-container">
+              <pre><code>
+  While (condición) {
+  // código a ejecutar 
+  }
+              </pre></code>
+            </div>
+
+            <strong>Características:</strong> <br />
+
+            La condición se evalúa antes de cada iteración. <br />
+
+            Si la condición es falsa desde el inicio, el bucle no se ejecuta.
+            <br />
+
+            Puede llevar a bucles infinitos si la condición nunca llega a ser
+            falsa. <br />
+            <div class="code-container">
+  <pre><code>
+    int contador = 0;
+    while (contador < 3) {
+    printf("Contador: %d\n", contador);
+    contador++;
+    }
+  </code></pre>
+            </div>
+
+            Este bucle imprime "Contador" y el valor de contador mientras este
+            sea menor que 3. <br />
+
+            <strong> Cuándo usarlo: </strong>Es útil cuando no se sabe
+            exactamente cuántas veces se repetirá el bucle, como al esperar que
+            una variable cumpla una determinada condición para detener la
+            iteración. <br />
+
+            <strong> 3. Bucle do...while</strong> <br />
+
+            El bucle do...while es similar al while, pero la diferencia
+            principal es que siempre ejecuta el bloque de código al menos una
+            vez, ya que la condición se evalúa después de cada iteración. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Do {
+  // código a ejecutar 
+  } while (condición);
+              </pre></code>
+            </div>
+
+            <strong> Características: </strong><br />
+
+            La condición se evalúa después de la ejecución del bloque de código.
+            <br />
+
+            Siempre se ejecuta al menos una vez, incluso si la condición es
+            falsa desde el principio. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int numero = 5;
+  Do {
+  Printf(“Número: %d\n”, numero);
+  Numero--;
+  }  while (numero > 0);
+              </pre></code>
+            </div>
+
+            En este ejemplo, el número se imprime y se decrementa mientras sea
+            mayor que 0. Aunque numero fuera inicialmente 0, el código dentro
+            del do se ejecutaría una vez antes de evaluar la condición. <br />
+
+            <strong> Cuándo usarlo: </strong>Es útil cuando se quiere asegurar
+            que el bloque de código se ejecute al menos una vez antes de evaluar
+            la condición, como en menús que piden una entrada del usuario y
+            luego verifican si la entrada es válida. <br />
+
+            <!-- cuadro¡¡ -->
+          </div>
+          <a href="#" class="Cerrar">Inicio</a>
+        </div>
+      </div>
+      <div id="modal-seis" class="modal">
+        <div class="contenido-modal">
+          <h2>Arreglos en Lenguaje C</h2>
+          <br />
+          <div class="centro">
+            Los arreglos en C son estructuras de datos que permiten almacenar
+            múltiples elementos del mismo tipo en una sola variable, utilizando
+            un índice para acceder a cada uno de esos elementos. Los arreglos
+            son esenciales en la programación, ya que facilitan la organización
+            y manipulación de datos. <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/arreglos.jpg" alt="lenguaje c" />
+            </div>
+
+            <strong> 1. Definición de Arreglos</strong> <br />
+            Un arreglo es una colección de elementos del mismo tipo que se
+            pueden acceder mediante un índice. En C, los índices comienzan desde
+            0, lo que significa que el primer elemento está en la posición 0, el
+            segundo en la posición 1, y así sucesivamente. <br />
+            <strong> 2. Tipos de Arreglos</strong> <br />
+            Existen varios tipos de arreglos en C, pero nos centraremos en tres
+            tipos principales: unidimensionales, bidimensionales y
+            tridimensionales. <br />
+
+            <strong> 2.1 Arreglos Unidimensionales</strong> <br />
+
+            Los arreglos unidimensionales son la forma más simple de arreglos,
+            que almacenan una secuencia lineal de elementos. <br />
+
+            <strong> Declaración:</strong> <br />
+            <div class="code-container">
+              <pre><code>
+  Tipo nombre_arreglo[tamaño];
+
+              </pre></code>
+            </div>
+
+            Ejemplo: <br />
+            <div class="code-container">
+              <pre><code>
+  Intnumeros[5]; 
+  // Declara un arreglo de 5 enteros.
+              </pre></code>
+            </div>
+
+            <strong> Inicialización:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int numeros[5] = {10, 20, 30, 40, 50}; 
+  // Arreglo inicializado con 5 elementos.
+              </pre></code>
+            </div>
+
+            <strong> Acceso a Elementos:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Printf(“%d\n”, numeros[2]); 
+  // Imprime el tercer elemento (30).
+              </pre></code>
+            </div>
+
+            <strong> 2.2 Arreglos Bidimensionales</strong> <br />
+
+            Los arreglos bidimensionales (o matrices) permiten almacenar datos
+            en una estructura de tabla, con filas y columnas. <br />
+
+            <strong> Declaración:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Tipo nombre_arreglo[filas][columnas];
+              </pre></code>
+            </div>
+
+            Ejemplo: <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int matriz[3][4]; 
+  // Declara una matriz de 3 filas y 4 columnas.
+              </pre></code>
+            </div>
+
+            <strong> Inicialización:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int matriz[2][3] = { 
+    {1, 2, 3}, 
+    {4, 5, 6} }; 
+    // Inicializa una matriz de 2x3.
+              </pre></code>
+            </div>
+
+            <strong> Acceso a Elementos:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Printf(“%d\n”, matriz[1][2]);
+  // Imprime el elemento en la fila 1, columna 2 (6).
+              </pre></code>
+            </div>
+
+            <strong> 2.3 Arreglos Tridimensionales</strong> <br />
+
+            Los arreglos tridimensionales extienden la idea de las matrices a un
+            espacio tridimensional, permitiendo almacenar datos en cubos, es
+            decir, múltiples matrices. <br />
+
+            <strong> Declaración: </strong><br />
+
+            <div class="code-container">
+              <pre><code>
+  Tipo nombre_arreglo[dim1][dim2][dim3];
+              </pre></code>
+            </div>
+
+            Ejemplo: <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int cubo[2][3][4]; 
+  // Declara un arreglo tridimensional de dimensiones 2x3x4.
+              </pre></code>
+            </div>
+
+            <strong> Inicialización:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Int cubo[2][2][2] = {
+  { 
+    {1, 2},
+    {3, 4} 
+    }, 
+    { 
+    {5, 6}, 
+    {7, 8} 
+    }
+  }; // Inicializa un cubo de 2x2x2.
+              </pre></code>
+            </div>
+
+            <strong> Acceso a Elementos:</strong> <br />
+
+            <div class="code-container">
+              <pre><code>
+  Printf(“%d\n”, cubo[1][0][1]); 
+  // Imprime el elemento en la posición (1, 0, 1) (6).
+              </pre></code>
+            </div>
+          </div>
+          <a href="#" class="Cerrar">Inicio</a>
+        </div>
+      </div>
+      <div id="modal-siete" class="modal">
+        <div class="contenido-modal">
+          <h2>Métodos de Ordenamiento en Lenguaje C</h2>
+          <br />
+          <div class="centro">
+            Los métodos de ordenamiento son algoritmos que organizan los
+            elementos de un arreglo en un orden específico. A continuación, se
+            describen los métodos de burbuja, inserción, selección y Shell,
+            junto con sus características y ejemplos. <br />
+
+            <strong> 1. Ordenamiento por Burbuja (Bubble Sort) </strong><br />
+
+            El ordenamiento por burbuja es uno de los algoritmos más sencillos y
+            conocidos. Funciona comparando elementos adyacentes y los
+            intercambia si están en el orden incorrecto. <br />
+            <div class="contenido2">
+              <img src="./imgenes-videos/metodo1.jpg" alt="lenguaje c" />
+            </div>
+
+            <strong> Características:</strong> <br />
+
+            <strong> Complejidad de tiempo:</strong> O(n²) en el peor y promedio
+            de los casos, O(n) en el mejor caso (cuando el arreglo ya está
+            ordenado). <br />
+
+            <strong> Complejidad de espacio:</strong> O(1) (se realiza en el
+            mismo arreglo). <br />
+
+            <strong> Estabilidad:</strong> Sí, ya que no cambia el orden de los
+            elementos iguales. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Void bubbleSort(int arr[], int n) {
+  For (int i = 0; i < n-1; i++) {
+  For (int j = 0; j < n-i-1; j++) {
+  If (arr[j] > arr[j+1]) {
+  Int temp = arr[j]; 
+  Arr[j] = arr[j+1]; 
+  Arr[j+1] = temp; 
+  }
+  }
+  } 
+  }
+              </pre></code>
+            </div>
+
+            <strong> 2. Ordenamiento por Selección (Selection Sort)</strong>
+            <br />
+
+            El ordenamiento por selección mejora la eficiencia al dividir el
+            arreglo en una parte ordenada y otra desordenada. Encuentra el
+            elemento más pequeño de la parte desordenada y lo intercambia con el
+            primer elemento de esa parte. <br />
+
+            <strong> Características: </strong><br />
+
+            <strong> Complejidad de tiempo:</strong> O(n²) en el peor, promedio
+            y mejor caso. <br />
+
+            <strong> Complejidad de espacio:</strong> O(1). <br />
+
+            <strong> Estabilidad:</strong> No, ya que puede cambiar el orden de
+            elementos iguales. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Void selectionSort(int arr[], int n) {
+  For (int i = 0; i < n-1; i++) {
+  Int min_idx = i;
+  For (int j = i+1; j < n; j++) {
+  If (arr[j] < arr[min_idx]) {
+  Min_idx = j; 
+  }
+  } 
+  Int temp = arr[min_idx];
+  arr[min_idx] = arr[i];
+  arr[i] = temp; 
+  } 
+  }
+              </pre></code>
+            </div>
+
+            <strong> 3. Ordenamiento por Inserción (Insertion Sort)</strong>
+            <br />
+
+            El ordenamiento por inserción construye el arreglo ordenado uno a
+            uno. Toma cada elemento de la lista y lo inserta en su posición
+            correcta en la lista ya ordenada. <br />
+
+            <strong> Características:</strong> <br />
+
+            <strong> Complejidad de tiempo:</strong> O(n²) en el peor caso, O(n)
+            en el mejor caso (cuando el arreglo ya está ordenado). <br />
+
+            <strong> Complejidad de espacio:</strong> O(1). <br />
+
+            <strong> Estabilidad:</strong> Sí, ya que no cambia el orden de los
+            elementos iguales. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Void insertionSort(int arr[], int n) {
+  For (int i = 1; i < n; i++) {
+  Int key = arr[i];
+  Int j = i – 1;
+  While (j >= 0 && arr[j] > key) {
+  arr[j + 1] = arr[j];
+  J = j – 1; }
+  arr[j + 1] = key; 
+  }
+  }
+              </pre></code>
+            </div>
+
+            <strong> 4. Ordenamiento por Shell (Shell Sort)</strong> <br />
+
+            El ordenamiento por Shell es una mejora del ordenamiento por
+            inserción que permite la comparación de elementos que están a una
+            cierta distancia entre sí. Esto ayuda a mover los elementos más
+            grandes y pequeños hacia sus posiciones correctas más rápidamente.
+            <br />
+
+            <strong> Características:</strong> <br />
+
+            <strong> Complejidad de tiempo:</strong> Varía según la secuencia de
+            intervalos utilizada, generalmente entre O(n log n) y O(n²). <br />
+
+            <strong> Complejidad de espacio:</strong> O(1). <br />
+
+            <strong> Estabilidad:</strong> No, ya que puede cambiar el orden de
+            elementos iguales. <br />
+
+            <div class="code-container">
+              <pre><code>
+  Void shellSort(int arr[], int n) {
+  For (int gap = n/2; gap > 0; gap /= 2) { 
+  For (int i = gap; i < n; i++) 
+  { Int temp = arr[i];
+  Int j;
+  For (j = i; j >= gap && arr[j – gap] > temp; j -= gap) {
+  arr[j] = arr[j – gap];
+  } arr[j] = temp;
+  } 
+  } 
+  }
+              </pre></code>
+            </div>
+          </div>
+          <a href="#" class="Cerrar">Inicio</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
